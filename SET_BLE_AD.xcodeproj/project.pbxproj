@@ -14,6 +14,13 @@
 		46709D962047D3B80093895F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46709D942047D3B80093895F /* LaunchScreen.storyboard */; };
 		46709DA12047D3B80093895F /* SET_BLE_ADTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DA02047D3B80093895F /* SET_BLE_ADTests.swift */; };
 		46709DAC2047D3B80093895F /* SET_BLE_ADUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DAB2047D3B80093895F /* SET_BLE_ADUITests.swift */; };
+		46709DBA2047D4580093895F /* view_set_ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DB92047D4580093895F /* view_set_ad.swift */; };
+		46709DBF2047D57B0093895F /* AdvertisingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DBE2047D57B0093895F /* AdvertisingData.swift */; };
+		46709DC52047D58E0093895F /* BPprotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DC02047D58E0093895F /* BPprotocol.swift */; };
+		46709DC62047D58E0093895F /* StoreDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DC12047D58E0093895F /* StoreDeviceInfo.swift */; };
+		46709DC72047D58E0093895F /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DC22047D58E0093895F /* config.swift */; };
+		46709DC82047D58E0093895F /* BlueToothLEDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DC32047D58E0093895F /* BlueToothLEDevice.swift */; };
+		46709DC92047D58E0093895F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46709DC42047D58E0093895F /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		46709DA72047D3B80093895F /* SET_BLE_ADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SET_BLE_ADUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46709DAB2047D3B80093895F /* SET_BLE_ADUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SET_BLE_ADUITests.swift; sourceTree = "<group>"; };
 		46709DAD2047D3B80093895F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46709DB92047D4580093895F /* view_set_ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view_set_ad.swift; sourceTree = "<group>"; };
+		46709DBE2047D57B0093895F /* AdvertisingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisingData.swift; sourceTree = "<group>"; };
+		46709DC02047D58E0093895F /* BPprotocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPprotocol.swift; sourceTree = "<group>"; };
+		46709DC12047D58E0093895F /* StoreDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDeviceInfo.swift; sourceTree = "<group>"; };
+		46709DC22047D58E0093895F /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		46709DC32047D58E0093895F /* BlueToothLEDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueToothLEDevice.swift; sourceTree = "<group>"; };
+		46709DC42047D58E0093895F /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,8 @@
 				46709D922047D3B80093895F /* Assets.xcassets */,
 				46709D942047D3B80093895F /* LaunchScreen.storyboard */,
 				46709D972047D3B80093895F /* Info.plist */,
+				46709DB92047D4580093895F /* view_set_ad.swift */,
+				46709DBD2047D5380093895F /* Transport */,
 			);
 			path = SET_BLE_AD;
 			sourceTree = "<group>";
@@ -123,6 +139,19 @@
 				46709DAD2047D3B80093895F /* Info.plist */,
 			);
 			path = SET_BLE_ADUITests;
+			sourceTree = "<group>";
+		};
+		46709DBD2047D5380093895F /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				46709DBE2047D57B0093895F /* AdvertisingData.swift */,
+				46709DC32047D58E0093895F /* BlueToothLEDevice.swift */,
+				46709DC02047D58E0093895F /* BPprotocol.swift */,
+				46709DC22047D58E0093895F /* config.swift */,
+				46709DC12047D58E0093895F /* StoreDeviceInfo.swift */,
+				46709DC42047D58E0093895F /* Util.swift */,
+			);
+			path = Transport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +289,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46709D8E2047D3B80093895F /* ViewController.swift in Sources */,
+				46709DC92047D58E0093895F /* Util.swift in Sources */,
+				46709DC82047D58E0093895F /* BlueToothLEDevice.swift in Sources */,
+				46709DC62047D58E0093895F /* StoreDeviceInfo.swift in Sources */,
 				46709D8C2047D3B80093895F /* AppDelegate.swift in Sources */,
+				46709DBF2047D57B0093895F /* AdvertisingData.swift in Sources */,
+				46709DC72047D58E0093895F /* config.swift in Sources */,
+				46709DBA2047D4580093895F /* view_set_ad.swift in Sources */,
+				46709DC52047D58E0093895F /* BPprotocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anxell.SET-BLE-AD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anxell.SET-BLE-AD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

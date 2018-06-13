@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,312 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SET_BLE_AD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAG-ro-CvI">
+                                <rect key="frame" x="30" y="20" width="708" height="1500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cp-0Y-9bw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1060"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJT-k5-ea5">
+                                        <rect key="frame" x="20" y="50" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E3AK">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e3ak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWC-SX-yDk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbD-9p-hk7">
+                                        <rect key="frame" x="20" y="141" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E5AR">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e5ar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lN6-eg-gn5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC7-wr-Jd0">
+                                        <rect key="frame" x="20" y="232" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E5AK">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e5ak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6u-4c-pQu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="997-Ax-IQ2">
+                                        <rect key="frame" x="20" y="323" width="728" height="41"/>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.35294117650000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="GEM Easiprox⁺">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_gem_easiprox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DT9-AI-w6A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1po-Wx-nNi">
+                                        <rect key="frame" x="20" y="414" width="728" height="41"/>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.35294117650000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="GEM DG-800⁺">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_gem_dg_800:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dki-sZ-K2J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W9-so-yz1">
+                                        <rect key="frame" x="20" y="505" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E3A2">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e3a2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNt-1E-PGW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-SD-LzK">
+                                        <rect key="frame" x="20" y="596" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E5AR2">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e5ar2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xet-Fa-xYg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgc-fr-pQN">
+                                        <rect key="frame" x="20" y="687" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E5AK2">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e5ak2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7z-4Z-Ycd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7q-bD-bWf">
+                                        <rect key="frame" x="20" y="778" width="728" height="41"/>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.35294117650000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="GEM Easiprox⁺ Slim">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_gem_easiprox_slim:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0re-aD-XN4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5f-xh-F4f">
+                                        <rect key="frame" x="20" y="869" width="728" height="41"/>
+                                        <color key="backgroundColor" red="0.047058823530000002" green="0.35294117650000001" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="GEM DG-160⁺">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_gem_dg_160:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXz-2Y-t6I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvi-WE-mIg">
+                                        <rect key="frame" x="20" y="960" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.057002131140000002" blue="0.103378438" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ROFU BC-5900B">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_rofu_bc_5900b:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUC-d6-gK4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-ph-ai7">
+                                        <rect key="frame" x="20" y="1051" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ROFU BKC-5000B">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_rofu_bkc_5000b:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eg-g2-Xai"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpP-kJ-smU">
+                                        <rect key="frame" x="20" y="1142" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E3AK7">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e3ak7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgh-Hy-Uv6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT4-qN-UEh">
+                                        <rect key="frame" x="20" y="1233" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL E3AK8">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_e3ak8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4u-fU-vhh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4o-b9-vuX">
+                                        <rect key="frame" x="20" y="1324" width="728" height="41"/>
+                                        <color key="backgroundColor" red="1" green="0.17929930669999999" blue="0.25285222169999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ANXELL PBT-1000BT">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bt_anxell_pbt_1000bt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Vf-DR-OdO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oDR-ph-ai7" firstAttribute="top" secondItem="Lvi-WE-mIg" secondAttribute="bottom" constant="50" id="0wu-3d-ONu"/>
+                                    <constraint firstItem="I7q-bD-bWf" firstAttribute="top" secondItem="bgc-fr-pQN" secondAttribute="bottom" constant="50" id="BvR-Up-JJV"/>
+                                    <constraint firstItem="OpP-kJ-smU" firstAttribute="top" secondItem="oDR-ph-ai7" secondAttribute="bottom" constant="50" id="GjX-tu-LxQ"/>
+                                    <constraint firstItem="1po-Wx-nNi" firstAttribute="top" secondItem="997-Ax-IQ2" secondAttribute="bottom" constant="50" id="PZQ-Iq-Buz"/>
+                                    <constraint firstItem="gT4-qN-UEh" firstAttribute="top" secondItem="OpP-kJ-smU" secondAttribute="bottom" constant="50" id="Wvp-he-909"/>
+                                    <constraint firstItem="4W9-so-yz1" firstAttribute="top" secondItem="1po-Wx-nNi" secondAttribute="bottom" constant="50" id="ZM8-I8-JPr"/>
+                                    <constraint firstItem="qbD-9p-hk7" firstAttribute="top" secondItem="rJT-k5-ea5" secondAttribute="bottom" constant="50" id="d96-H4-Mq7"/>
+                                    <constraint firstItem="MC7-wr-Jd0" firstAttribute="top" secondItem="qbD-9p-hk7" secondAttribute="bottom" constant="50" id="eS1-Qc-GuX"/>
+                                    <constraint firstItem="RLp-SD-LzK" firstAttribute="top" secondItem="4W9-so-yz1" secondAttribute="bottom" constant="50" id="fo1-ZN-ha7"/>
+                                    <constraint firstItem="rJT-k5-ea5" firstAttribute="top" secondItem="4cp-0Y-9bw" secondAttribute="top" constant="50" id="kik-vI-hJB"/>
+                                    <constraint firstItem="f4o-b9-vuX" firstAttribute="top" secondItem="gT4-qN-UEh" secondAttribute="bottom" constant="50" id="lit-SY-JoG"/>
+                                    <constraint firstItem="997-Ax-IQ2" firstAttribute="top" secondItem="MC7-wr-Jd0" secondAttribute="bottom" constant="50" id="loa-qE-KgB"/>
+                                    <constraint firstItem="Lvi-WE-mIg" firstAttribute="top" secondItem="h5f-xh-F4f" secondAttribute="bottom" constant="50" id="rhw-gv-JrM"/>
+                                    <constraint firstItem="h5f-xh-F4f" firstAttribute="top" secondItem="I7q-bD-bWf" secondAttribute="bottom" constant="50" id="zc7-ZQ-odF"/>
+                                    <constraint firstItem="bgc-fr-pQN" firstAttribute="top" secondItem="RLp-SD-LzK" secondAttribute="bottom" constant="50" id="zfw-DM-xak"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rJT-k5-ea5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3wC-VY-gj4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MC7-wr-Jd0" secondAttribute="trailing" constant="20" id="4jQ-Mp-woU"/>
+                            <constraint firstItem="gT4-qN-UEh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5J4-lq-Ocl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lvi-WE-mIg" secondAttribute="trailing" constant="20" id="6tB-Ya-IaC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h5f-xh-F4f" secondAttribute="trailing" constant="20" id="8PW-Iw-H5j"/>
+                            <constraint firstItem="OpP-kJ-smU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Em-6N-i7d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oDR-ph-ai7" secondAttribute="trailing" constant="20" id="EvB-xl-JDy"/>
+                            <constraint firstItem="1po-Wx-nNi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FUV-rX-LBo"/>
+                            <constraint firstItem="MC7-wr-Jd0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G2l-yy-lMA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4cp-0Y-9bw" secondAttribute="trailing" id="IUj-gk-4Dx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qbD-9p-hk7" secondAttribute="trailing" constant="20" id="K1k-bn-LAj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLp-SD-LzK" secondAttribute="trailing" constant="20" id="Lwa-X4-Ohe"/>
+                            <constraint firstItem="4cp-0Y-9bw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Me8-Um-JP0"/>
+                            <constraint firstItem="I7q-bD-bWf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mzc-4J-3sh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4W9-so-yz1" secondAttribute="trailing" constant="20" id="NGg-Ky-Cqt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f4o-b9-vuX" secondAttribute="trailing" constant="20" id="OPf-zS-cvf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4cp-0Y-9bw" secondAttribute="bottom" id="STU-Mc-8hd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bgc-fr-pQN" secondAttribute="trailing" constant="20" id="U2X-zu-VxI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAG-ro-CvI" secondAttribute="trailing" constant="30" id="Ucm-Xa-4hQ"/>
+                            <constraint firstItem="hAG-ro-CvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VSu-Ca-ouf"/>
+                            <constraint firstItem="qbD-9p-hk7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XNV-cq-Fq4"/>
+                            <constraint firstItem="4cp-0Y-9bw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YTU-GD-aS9"/>
+                            <constraint firstItem="4W9-so-yz1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cA0-1Y-I4e"/>
+                            <constraint firstItem="997-Ax-IQ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cV7-X3-M9A"/>
+                            <constraint firstItem="oDR-ph-ai7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dap-Oz-pqA"/>
+                            <constraint firstItem="RLp-SD-LzK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eZy-sE-NI9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="997-Ax-IQ2" secondAttribute="trailing" constant="20" id="i7w-Ii-P3s"/>
+                            <constraint firstItem="h5f-xh-F4f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ihr-tn-Tcd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OpP-kJ-smU" secondAttribute="trailing" constant="20" id="mvM-N6-rS3"/>
+                            <constraint firstItem="bgc-fr-pQN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oWn-oL-mGz"/>
+                            <constraint firstItem="f4o-b9-vuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ocV-GZ-vuf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1po-Wx-nNi" secondAttribute="trailing" constant="20" id="pWn-6C-kKx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I7q-bD-bWf" secondAttribute="trailing" constant="20" id="qI1-y7-rtz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gT4-qN-UEh" secondAttribute="trailing" constant="20" id="uMa-lf-m8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rJT-k5-ea5" secondAttribute="trailing" constant="20" id="x9c-Tp-fKf"/>
+                            <constraint firstItem="Lvi-WE-mIg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xEn-YQ-Skd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="my_scrolview" destination="4cp-0Y-9bw" id="Gjk-2K-xJ2"/>
+                        <outlet property="my_view" destination="hAG-ro-CvI" id="XcN-MX-bj2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="110.19490254872565"/>
+        </scene>
+        <!--View set ad-->
+        <scene sceneID="ZxZ-hm-K27">
+            <objects>
+                <viewController storyboardIdentifier="view_set_ad" id="DLC-Mz-7ng" customClass="view_set_ad" customModule="SET_BLE_AD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7KP-jt-QQy">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gj1-zJ-iSM">
+                                <rect key="frame" x="16" y="146" width="318" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9h-rv-b6M">
+                                <rect key="frame" x="16" y="209" width="318" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-vW-YbK">
+                                <rect key="frame" x="16" y="80" width="318" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74S-9s-nfc">
+                                <rect key="frame" x="50" y="866" width="668" height="58"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="CLOSE">
+                                    <color key="titleColor" red="0.036254484699999999" green="1" blue="0.15593195209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bt_close:" destination="DLC-Mz-7ng" eventType="touchUpInside" id="nfW-VU-ZsA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="74S-9s-nfc" firstAttribute="leading" secondItem="kfW-sG-ZZN" secondAttribute="leading" constant="50" id="94Z-MF-BYq"/>
+                            <constraint firstItem="kfW-sG-ZZN" firstAttribute="bottom" secondItem="74S-9s-nfc" secondAttribute="bottom" constant="100" id="9SO-4l-Ckj"/>
+                            <constraint firstItem="kfW-sG-ZZN" firstAttribute="trailing" secondItem="74S-9s-nfc" secondAttribute="trailing" constant="50" id="W93-bK-yJ9"/>
+                            <constraint firstItem="74S-9s-nfc" firstAttribute="centerX" secondItem="kfW-sG-ZZN" secondAttribute="centerX" id="jgG-sL-UMT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kfW-sG-ZZN"/>
+                    </view>
+                    <connections>
+                        <outlet property="LB1" destination="pk2-vW-YbK" id="i1a-B0-pf3"/>
+                        <outlet property="LB2" destination="Gj1-zJ-iSM" id="jap-oi-C61"/>
+                        <outlet property="LB3" destination="l9h-rv-b6M" id="lr0-I9-rzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifn-sh-UhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.8" y="92.203898050974516"/>
         </scene>
     </scenes>
 </document>
